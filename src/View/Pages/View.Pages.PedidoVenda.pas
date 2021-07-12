@@ -77,10 +77,12 @@ type
     procedure btnRequestOrderClick(Sender: TObject);
   private
     vInAlterando:Boolean;
+    // Faltou fazer a implementação da camada model
     FControllerCliente:IModelCrudGeneric<TModelEntitiesCliente>;
     FControllerProduto:IModelCrudGeneric<TModelEntitiesProduto>;
     FControllerOrder:IModelServicesOrder<TModelEntitiesOrder>;
     FControllerProductOrder:IModelServicesProductOrder<TModelEntitiesProductOrder>;
+
     procedure pClearFieldsProduct;
     procedure pAttValueTotal(aValue:Currency);
     procedure pAttFieldsOrder();
